@@ -61,6 +61,8 @@
         <button onclick="changeH1()">Click to change H1</button>
         <button onclick="backgroundColor()">Click to change the background</button>
         <button onclick="fakeAdress()">Click to change the address</button>
+        
+        <button onclick="toggleAllHeadersClass()">Click to add a css class</button>
     </main>
     <footer>
         <div>
@@ -80,8 +82,9 @@
     <script type="text/javascript">
         //create a h1 changing function
         const changeH1=function(){
-
+            //first we declare a new variable that contain what we want to change
             let h1 = document.querySelector('h1')
+            //with innerHTML we change in what we want to change
             h1.innerHTML = "HELLO WORLD"
             
 
@@ -99,6 +102,9 @@
             let address=document.getElementById('streetName')
             address.innerHTML='Finto indirizzo'
         }
+
+        
+
     </script>
 </body>
 </html>
