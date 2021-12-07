@@ -2,7 +2,20 @@ img{
     width: 100px;
 }
 
-.description{
-    font-size: 15px;
-    width: 250px;
+table{
+    width: auto;
+    border: 20px;
+    align-content:center ;
+    border: 3px solid grey;
+    border-collapse: collapse;
+    table-layout: fixed;
 }
+
+th {
+    border: 1px solid grey;
+}
+
+td {
+    border: 1px solid grey;
+}
+
