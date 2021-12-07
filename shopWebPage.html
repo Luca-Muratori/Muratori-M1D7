@@ -60,6 +60,7 @@
         </div>
         <button onclick="changeH1()">Click to change H1</button>
         <button onclick="backgroundColor()">Click to change the background</button>
+        <button onclick="fakeAdress()">Click to change the address</button>
     </main>
     <footer>
         <div>
@@ -84,7 +85,7 @@
             h1.innerHTML = "HELLO WORLD"
             
 
-            //second step: changing the h1 elem
+            
             
         }
         //create a function that change the background color
@@ -93,7 +94,11 @@
             body.style.backgroundColor='red'
             
         }
-
+        //create a function that change my address
+        const fakeAdress=function (){
+            let address=document.getElementById('streetName')
+            address.innerHTML='Finto indirizzo'
+        }
     </script>
 </body>
 </html>
