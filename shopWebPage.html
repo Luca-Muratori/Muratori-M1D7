@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="shop.css">
     <title>1001 Wonderful Things</title>
+
+
+    
 </head>
 <body>
     <header>
-        <h1>1001 Wonderful Things</h1>
+        <h1 id='h1'>1001 Wonderful Things</h1>
     </header>
 
     <main>
@@ -56,6 +58,8 @@
                 </tr>
             </table>
         </div>
+        <button onclick="changeH1()">Click to change H1</button>
+        <button onclick="backgroundColor()">Click to change the background</button>
     </main>
     <footer>
         <div>
@@ -71,5 +75,25 @@
         </div>
         
     </footer>
+
+    <script type="text/javascript">
+        //create a h1 changing function
+        const changeH1=function(){
+
+            let h1 = document.querySelector('h1')
+            h1.innerHTML = "HELLO WORLD"
+            
+
+            //second step: changing the h1 elem
+            
+        }
+        //create a function that change the background color
+        const backgroundColor=function (){
+            let body = document.querySelector('body')
+            body.style.backgroundColor='red'
+            
+        }
+
+    </script>
 </body>
 </html>
