@@ -61,6 +61,7 @@
         <button onclick="changeH1()">Click to change H1</button>
         <button onclick="backgroundColor()">Click to change the background</button>
         <button onclick="fakeAdress()">Click to change the address</button>
+        <button onclick="changeColor()">click here to change the color the prices</button>
         
         
     </main>
@@ -102,9 +103,49 @@
             let address=document.getElementById('streetName')
             address.innerHTML='Finto indirizzo'
         }
-
+        //create a function that  to add a CSS class to every Amazon link
+        const addClass=function(){
+            let addClasses=document.querySelectorAll('a')
+            for (let oneA of addClasses){
+                 oneA.classList.add('addedClass')
+            }
+            
+        }
         
+        //Write a function to toggle a CSS class for all the images in the table; 
+        //that class should set the visibility of the image
+        const toggleImages=function(){
+            let addToggle=document.querySelectorAll('img')
+            for(let oneImg of addToggle){
+                oneImg.classList.add('imgOpacity')
+            }
+        }
 
+        //Write a function to color the price of the products in a different one
+        // every time it's invoked
+
+        //first step: create a color randomizer
+        const colorRandom=function(){
+            r=Math.round(Math.random()*255)
+            g=Math.round(Math.random()*255)
+            b=Math.round(Math.random()*255)
+            return "rgb ("+r+","+g+","+b+")";
+        }
+
+        //second step: create a DOM manipulation
+        const changeColor=function(){
+            //we insert the color randomizer function
+            const randomColor=colorRandom()
+            //we create an object that contain every price
+            let everyPrice=document.querySelectorAll('.price')
+            //we create a for loop that select every price and insert the color randomizer variable
+             for (let i=0; i<everyPrice.length; i++){
+                let onePrice=everyPrice[i]
+                onePrice.style.color=randomColor
+            }
+        }
+
+    
     </script>
 </body>
 </html>

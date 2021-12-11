@@ -1,5 +1,11 @@
+h1{
+    text-align: center;
+    
+}
 img{
     width: 100px;
+}
+.imgOpacity{
     opacity: 0.6;
 }
 
